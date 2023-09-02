@@ -38,7 +38,6 @@ nav{
 }
 /* css for logo of site */
 .logo{
-    width: 140px;
     filter: invert(100%);
     width: 300px;
     height: 100%;
@@ -350,6 +349,10 @@ nav .fa-solid{
 @media only screen and (max-width: 600px){
     #header{
         background-image: url(./assets/images/user.jpeg);
+    }
+    .logo{
+        width: 200px;
+        height: 100%;
     }
     .header-text{
         margin-top: 100%;
