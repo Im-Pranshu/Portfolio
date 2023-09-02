@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pranshu's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://kit.fontawesome.com/d39b80fcca.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <!-- ************************Header******************************** -->
+    <div id="header">
+        <div class="container">
+            <!-- creating navigation bar with logo -->
+            <nav>
+                <img src="./assets/images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi, I'm <span>Pranshu</span><br>a CSE Student</h1>
+            </div>
+        </div>
+    </div>
+    <!-- ***********************About************************** -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./assets/images/user.jpeg" alt="image of the website owner">
+                </div>
+                <div class="about-col-2">
+                    <h2 class="sub-title">About Me</h2>
+                    <p>Persuing Computer Science and Engineering<br>
+                        I have practiced c language <br>
+                        Primary Language : C++ with DSA <br>
+                        i also know some android development with kotlin and xml , also know basics of python<br>
+                        FULL STACK DEVELOPER <br>
+                        MERN STACK <br>
+                        Always curious to learn new concepts and algorithms. Very Keened learner , always looking for opportunities<br></p>
+                    <!-- adding tabs -->
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('technicals')">Technical Strenght</p>
+                        <p class="tab-links" onclick="opentab('cores')">Core Strenght</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="technicals">
+                        <ul>
+                            <li><span>Web Development</span><br>Web app Development</li>
+                            <li><span>App Development</span><br>Building Android apps</li>
+                            <li><span>DSA</span><br>Data Structure and Algorithm</li>
+                            <li><span>C++</span><br>Practicing DSA in C++</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="cores">
+                        <ul>
+                            <li><span>Leader</span><br>Able to lead my team well</li>
+                            <li><span>Motivator</span><br>I'm able to motivate my team towards our goal</li>
+                            <li><span>Patience</span><br>I'm always calm in all situations</li>
+                            <li><span>Coding Enthusiast</span><br>Loves coding and finding solutions to the problem.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2021 - 25</span><br>Persuing B.Tech from C.S.E at Axis Colleges</li>
+                            <li><span>2019 - 20</span><br>12th from Krishna Education Centre Intermediate College</li>
+                            <li><span>2017 - 2018</span><br>10th from Krishna Education Centre</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ***************************Services***************************** -->
+    <div id="services">
+        <div class="container">
+            <h2 class="sub-title">My Services</h2>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h3>Web App</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis vitae itaque neque porro est reprehenderit error cumque deleniti, quaerat quas praesentium beatae distinctio reiciendis molestiae recusandae eligendi nisi. Corrupti, libero?</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h3>Mobile App</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis vitae itaque neque porro est reprehenderit error cumque deleniti, quaerat quas praesentium beatae distinctio reiciendis molestiae recusandae eligendi nisi. Corrupti, libero?</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h3>UI/UX Design</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis vitae itaque neque porro est reprehenderit error cumque deleniti, quaerat quas praesentium beatae distinctio reiciendis molestiae recusandae eligendi nisi. Corrupti, libero?</p>
+                    <a href="#">learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- *****************Portfolio*********************** -->
+    <div id="portfolio">
+        <div class="container">
+            <h2 class="sub-title">My Work</h2>
+            <div class="work-list">
+                <div class="work">
+                    <img src="./assets/images/work-1.png" alt="Image of Work 1">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>Th   e app connects you to the talented people around the world. Download it from play store.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./assets/images/work-2.png" alt="Image of Work 2">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>The app connects you to the talented people around the world. Download it from play store.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./assets/images/work-3.png" alt="Image of Work 3">
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p>The app connects you to the talented people around the world. Download it from play store.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+
+    <!-- **************************Contact************************ -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h2 class="sub-title">Contact Me</h2>
+                    <p><i class="fa-solid fa-envelope"></i>pranshu.sharma1303@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>+91 7272010120</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/ig_pranshu_sharma/?hl=en"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/pranshu-sharma1303/"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <a href="./assets/Resume.pdf" download class="btn btn2">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &copy; Pranshu. Made with <i class="fa-solid fa-heart"></i> by Pranshu Sharma</p>
+        </div>
+    </div>
+
+    <script>
+        // calling to classes and storing them in variable
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        // defining opentab function which will select particular tag and hide other.
+        function opentab(tabname){
+                for(tablink of tablinks){
+                    // it will remove this class name for all the tab links.
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                    // it will remove this class content for all the tab links.
+                    tabcontent.classList.remove("active-tab");
+                }
+                // it will add active link and display the color on slectd tab
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab")
+        }
+
+    </script>
+
+    <!-- for hamburger icon -->
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0"
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px"
+        }
+
+    </script>
+
+    <!-- input to google form -->
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwak0zcAo69KX35nLdrbCbwAkVVLxkTqJkas5ukSs9TodZ9JTh5cWTASVaeo_cRjYUn_A/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg");
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Submitted Succesfully<br/>Thank you for contacting, you will get a reply soon."
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+
+</body>
+</html>
