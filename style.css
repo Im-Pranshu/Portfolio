@@ -349,7 +349,7 @@ nav .fa-solid{
 }
 @media only screen and (max-width: 600px){
     #header{
-        background-image: url(./assets/images/phone-background.png);
+        background-image: url(./assets/images/user.jpeg);
     }
     .header-text{
         margin-top: 100%;
