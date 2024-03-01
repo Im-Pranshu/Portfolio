@@ -10,6 +10,7 @@
 
 </head>
 <body>
+
     <!-- ************************Header******************************** -->
     <div id="header">
         <div class="container">
@@ -33,6 +34,8 @@
             </div>
         </div>
     </div>
+
+
     <!-- ***********************About************************** -->
     <div id="about">
         <div class="container">
@@ -76,6 +79,8 @@
             </div>
         </div>
     </div>
+
+
     <!-- ***************************Services***************************** -->
     <div id="services">
         <div class="container">
@@ -102,6 +107,8 @@
             </div>
         </div>
     </div>
+
+
     <!-- *****************Portfolio*********************** -->
     <div id="portfolio">
         <div class="container">
@@ -136,6 +143,7 @@
         </div>
     </div>
 
+
     <!-- **************************Contact************************ -->
     <div id="contact">
         <div class="container">
@@ -168,6 +176,10 @@
         </div>
     </div>
 
+
+<!-- ************************** JAVA-SCRIPT ************************** -->
+
+    <!-- Managing the content of tabs of about me sections -->
     <script>
         // calling to classes and storing them in variable
         var tablinks = document.getElementsByClassName("tab-links");
@@ -186,7 +198,6 @@
                 event.currentTarget.classList.add("active-link");
                 document.getElementById(tabname).classList.add("active-tab")
         }
-
     </script>
 
     <!-- for hamburger icon -->
@@ -212,7 +223,7 @@
           e.preventDefault()
           fetch(scriptURL, { method: 'POST', body: new FormData(form)})
             .then(response => {
-                msg.innerHTML = "Submitted Succesfully<br/>Thank you for contacting, you will get a reply soon."
+                msg.innerHTML = "Submitted Succesfully<br/>Thank you for contacting, we will reach you out soon."
                 setTimeout(function(){
                     msg.innerHTML = ""
                 },5000)
