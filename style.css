@@ -216,6 +216,7 @@ nav ul li a:hover::after{
     /* adding zoom transition */
     transition: transform 0.5s;
 }
+
 .layer{
     width: 100%;
     height: 0%;
