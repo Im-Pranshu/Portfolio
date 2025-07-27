@@ -10,12 +10,13 @@
 
 </head>
 <body>
+
     <!-- ************************Header******************************** -->
     <div id="header">
         <div class="container">
             <!-- creating navigation bar with logo -->
             <nav>
-                <img src="./assets/images/logo.png" class="logo" alt="logo of the website">
+                <a href="./index.html" ><img src="./assets/images/logo.png" class="logo" alt="logo of the website"></a>
                 <ul id="sidemenu">
                     <li><a href="#header">Home</a></li>
                     <li><a href="#about">About</a></li>
@@ -29,10 +30,12 @@
             </nav>
             <div class="header-text">
                 <p>Web Developer</p>
-                <h1>Hi, I'm <span>Pranshu</span><br>a CSE Student</h1>
+                <h1>Hey, I'm <span>Pranshu</span><br>a CSE Student</h1>
             </div>
         </div>
     </div>
+
+
     <!-- ***********************About************************** -->
     <div id="about">
         <div class="container">
@@ -42,13 +45,7 @@
                 </div>
                 <div class="about-col-2">
                     <h2 class="sub-title">About Me</h2>
-                    <p>Persuing Computer Science and Engineering<br>
-                        I have practiced c language <br>
-                        Primary Language : C++ with DSA <br>
-                        i also know some android development with kotlin and xml , also know basics of python<br>
-                        FULL STACK DEVELOPER <br>
-                        MERN STACK <br>
-                        Always curious to learn new concepts and algorithms. Very Keened learner , always looking for opportunities<br></p>
+                    <p>Seeking a challenging opportunity where I can leverage my skills and also get a chance to learn new things. I am always curious to learn new concepts and algorithms, keened learner , always looking for new opportunities.
                     <!-- adding tabs -->
                     <div class="tab-titles">
                         <p class="tab-links active-link" onclick="opentab('technicals')">Technical Strenght</p>
@@ -57,7 +54,7 @@
                     </div>
                     <div class="tab-contents active-tab" id="technicals">
                         <ul>
-                            <li><span>Web Development</span><br>Web app Development</li>
+                            <li><span>Web Development</span><br>HTML | CSS | JS</li>
                             <li><span>App Development</span><br>Building Android apps</li>
                             <li><span>DSA</span><br>Data Structure and Algorithm</li>
                             <li><span>C++</span><br>Practicing DSA in C++</li>
@@ -73,7 +70,7 @@
                     </div>
                     <div class="tab-contents" id="education">
                         <ul>
-                            <li><span>2021 - 25</span><br>Persuing B.Tech from C.S.E at Axis Colleges</li>
+                            <li><span>2021 - Persuing</span><br>B.Tech from C.S.E at Axis Colleges</li>
                             <li><span>2019 - 20</span><br>12th from Krishna Education Centre Intermediate College</li>
                             <li><span>2017 - 2018</span><br>10th from Krishna Education Centre</li>
                         </ul>
@@ -82,6 +79,8 @@
             </div>
         </div>
     </div>
+
+
     <!-- ***************************Services***************************** -->
     <div id="services">
         <div class="container">
@@ -90,24 +89,26 @@
                 <div>
                     <i class="fa-solid fa-code"></i>
                     <h3>Web App</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis vitae itaque neque porro est reprehenderit error cumque deleniti, quaerat quas praesentium beatae distinctio reiciendis molestiae recusandae eligendi nisi. Corrupti, libero?</p>
+                    <p>A goal-oriented Entry Level Frontend Developer with knowledge of HTML, CSS and JavaScript seeking to use technical proficiency and creativity to develop engaging user experiences and advance in a professional career.</p>
                     <a href="#">learn more</a>
                 </div>
                 <div>
                     <i class="fa-brands fa-app-store-ios"></i>
                     <h3>Mobile App</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis vitae itaque neque porro est reprehenderit error cumque deleniti, quaerat quas praesentium beatae distinctio reiciendis molestiae recusandae eligendi nisi. Corrupti, libero?</p>
+                    <p>Design and implement user interfaces for mobile applications. Develop mobile applications for Android platform using Kotlin. Publish mobile applications to the App Store and Google Play.</p>
                     <a href="#">learn more</a>
                 </div>
                 <div>
                     <i class="fa-solid fa-crop"></i>
                     <h3>UI/UX Design</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis vitae itaque neque porro est reprehenderit error cumque deleniti, quaerat quas praesentium beatae distinctio reiciendis molestiae recusandae eligendi nisi. Corrupti, libero?</p>
+                    <p>I will transform user needs into engaging experiences. Develop and maintain design systems and style guides</p>
                     <a href="#">learn more</a>
                 </div>
             </div>
         </div>
     </div>
+
+
     <!-- *****************Portfolio*********************** -->
     <div id="portfolio">
         <div class="container">
@@ -142,6 +143,7 @@
         </div>
     </div>
 
+
     <!-- **************************Contact************************ -->
     <div id="contact">
         <div class="container">
@@ -174,6 +176,10 @@
         </div>
     </div>
 
+
+<!-- ************************** JAVA-SCRIPT ************************** -->
+
+    <!-- Managing the content of tabs of about me sections -->
     <script>
         // calling to classes and storing them in variable
         var tablinks = document.getElementsByClassName("tab-links");
@@ -192,7 +198,6 @@
                 event.currentTarget.classList.add("active-link");
                 document.getElementById(tabname).classList.add("active-tab")
         }
-
     </script>
 
     <!-- for hamburger icon -->
@@ -218,7 +223,7 @@
           e.preventDefault()
           fetch(scriptURL, { method: 'POST', body: new FormData(form)})
             .then(response => {
-                msg.innerHTML = "Submitted Succesfully<br/>Thank you for contacting, you will get a reply soon."
+                msg.innerHTML = "Submitted Succesfully<br/>Thank you for contacting, we will reach you out soon."
                 setTimeout(function(){
                     msg.innerHTML = ""
                 },5000)
